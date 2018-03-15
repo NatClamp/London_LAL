@@ -7,8 +7,5 @@ This is a cool project to tell you about events going on in areas of London!
 Team members:
 Natalie Clamp
 (add your names guys!)   :D
-<<<<<<< HEAD
 Connie Chau
-=======
->>>>>>> cb18e512b7db0aeef4742c81412b11b623220cfc
 Roisin Clarke
