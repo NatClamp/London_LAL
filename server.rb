@@ -1,13 +1,13 @@
 require 'sinatra'
 
 get('/') do
-  erb :hello
+  erb :index
 end
 
 get('/:name') do
   @name = params[:name].capitalize
 
-  erb :hello
+  erb :index
 end
 
 post('/signup') do
