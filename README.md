@@ -5,9 +5,9 @@ This is a cool web app project to tell you about events going on in areas of Lon
 
 <h2>Team members:</h2>
 
-Natalie Clamp
-Connie Chau
-Roisin Clarke
-Lizzy Jegede
-Rosie Todd
+<p>Natalie Clamp
+<p>Connie Chau
+<p>Roisin Clarke
+<p>Lizzy Jegede
+<p>Rosie Todd
 
