@@ -70,6 +70,12 @@ footer p {
   float: left;
 }
 
-footer.i {
+i {
   float: right;
+  color: #6f777b;
+}
+
+.fa {
+  display: inline-block;
+  margin-left: 30px;
 }
