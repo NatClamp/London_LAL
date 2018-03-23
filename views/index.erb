@@ -23,13 +23,15 @@
 
 <!--  -->
 <div id = "event-choice-form">
-  <p class = "question">What would you like to do, and where?</p>
   <form method = "post" action = "/signup"> <!-- I think this action needs to change -->
-    <label for="location">Location </label>
-    <input type="text" id="location" name="location" value="" placeholder="Where are you?" required="required" autofocus="autofocus"/>
-    <label for="keyword">Keyword </label>
-    <input type="keyword" id="keyword" name="keyword" value="" placeholder="theatre" required="required"/>
-    <input type="submit" value="submit" id="submit-button">
+    <fieldset>
+      <legend>What would you like to do, and where?</legend>
+      <label for="location">Location </label>
+      <input type="text" id="location" name="location" value="" placeholder="Wimbledon" required="required" autofocus="autofocus"/>
+      <label for="keyword">   Keyword </label>
+      <input type="keyword" id="keyword" name="keyword" value="" placeholder="theatre" required="required"/>
+      <input type="submit" value="submit" id="submit-button">
+    </fieldset>
   </form>
 </div>
 
