@@ -20,19 +20,18 @@
 
 <main>
 <h1 class = "main title">Discover London</h1>
-<h3 class = "tagline">Skip the tourist destinations and experience London like a local.</h3>
-<h4 class = "tagline-2">Choose a location and a type of activity, and voila! London is your oyster.</h4>
+<h3 class = "tagline">Skip the tourist destinations and experience London like a local. <br>Choose a location and a type of activity, and voila! London is your oyster.</h3>
 
 <!-- Event form -->
 <div id = "event-choice-form">
   <form method = "post" action = "/events"> <!-- I think this action needs to change -->
     <section>
       <legend>What would you like to do, and where?</legend><br>
-      <label for="location">Location </label>
-      <input type="text" id="location" name="location" value="" placeholder="Wimbledon" required="required" autofocus="autofocus"/>
-      <label for="keyword">Keyword </label>
-      <input type="keyword" id="keyword" name="keyword" value="" placeholder="Theatre" required="required"/>
-      <input type="submit" value="submit" id="submit-button">
+<!--      <label for="location">Location </label> -->
+      <input type="text" id="location" class = "box" name="location" value="" placeholder="Location e.g. Soho" required="required" autofocus="autofocus"/><br>
+<!--      <label for="keyword">Keyword </label> -->
+      <input type="keyword" id="keyword" class = "box" name="keyword" value="" placeholder="Keyword e.g. Theatre" required="required"/><br>
+      <input type="submit" value="Submit" id="submit-button" class= "button">
     </section>
   </form>
 </div>

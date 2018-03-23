@@ -10,7 +10,9 @@ header {
   background-color: #BB0A21;
   color: #ffffff;
   padding: 10px;
+  text-align: center;
 }
+
 
 header h1{
   font-family: 'IBM Plex Serif', serif;
@@ -38,21 +40,41 @@ header ul.menu li a:hover {
 }
 
 main {
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
 }
 
 main h1, main h2, main h3, main h4, main h5 {
   color: #231f20;
   margin: 20px 0px;
 }
+
 main p {
   margin: 15px 0px;
 }
 
 section {
   padding: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
   border: 1px solid #dee0e2;
+  text-align: center;
+}
+
+.box {
+  font-size: 1em;
+  margin: 5px;
+  padding: 10px;
+}
+
+.button {
+  background-color: #2F74AF;
+  display: inline-block;
+  padding: 12px 22px;
+  color: #ffffff;
+  font-size: 1em;
+  border: none;
+  text-decoration: none;
+  margin: 10px;
 }
 
 footer {
