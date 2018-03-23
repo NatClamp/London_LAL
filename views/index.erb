@@ -14,16 +14,9 @@
   <a href="#contact" class="nav-bar-item">Contact</a>
 </nav>
 
-  <!-- We won't need this but keeping for example for now -->
-<% if @name %>
-  <h1>Hello <%= @name %>!</h1>
-<% else %>
-  <h1>Hello world!</h1>
-<% end %>
-
-<!--  -->
+<!-- Event form -->
 <div id = "event-choice-form">
-  <form method = "post" action = "/signup"> <!-- I think this action needs to change -->
+  <form method = "post" action = "/events"> <!-- I think this action needs to change -->
     <fieldset>
       <legend>What would you like to do, and where?</legend>
       <label for="location">Location </label>

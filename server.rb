@@ -4,11 +4,10 @@ get('/') do
   erb :index
 end
 
-get('/:name') do
-  @name = params[:name].capitalize
-
-  erb :index
-end
+post('/events') do
+  puts params[:location]
+  puts params[:keyword]
+endi
 
 post('/signup') do
   puts params[:name]
