@@ -1,15 +1,13 @@
-# London_LAL
-CF:G Project
+# London, Like a Local
+<h1>CF:G Ruby Project</h1>
 
-This is a cool project to tell you about events going on in areas of London!
+This is a cool web app project to tell you about events going on in areas of London!
 
-Team members:
+<h2>Team members:</h2>
 
 Natalie Clamp
-
 Connie Chau
-
 Roisin Clarke
-
-(add your names guys!)   :D
+Lizzy Jegede
+Rosie Todd
 
