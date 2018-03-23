@@ -14,15 +14,24 @@
   <a href="#contact" class="nav-bar-item">Contact</a>
 </nav>
 
-  <!-- Fetches data from input -->
+  <!-- We won't need this but keeping for example for now -->
 <% if @name %>
   <h1>Hello <%= @name %>!</h1>
 <% else %>
   <h1>Hello world!</h1>
 <% end %>
 
-
-
+<!--  -->
+<div id = "event-choice-form">
+  <p class = "question">What would you like to do, and where?</p>
+  <form method = "post" action = "/signup"> <!-- I think this action needs to change -->
+    <label for="location">Location </label>
+    <input type="text" id="location" name="location" value="" placeholder="Where are you?" required="required" autofocus="autofocus"/>
+    <label for="keyword">Keyword </label>
+    <input type="keyword" id="keyword" name="keyword" value="" placeholder="theatre" required="required"/>
+    <input type="submit" value="submit" id="submit-button">
+  </form>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
