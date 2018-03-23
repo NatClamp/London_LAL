@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello from Sinatra</title></head>
 <body>
-  
+
   <!-- Navigation -->
 <nav class="nav-bar">
   <a href="#home" class="nav-bar-item">Home</a>
   <a href="#about us" class="nav-bar-item">About Us</a>
   <a href="#contact" class="nav-bar-item">Contact</a>
 </nav>
-  
+
   <!-- Fetches data from input -->
 <% if @name %>
   <h1>Hello <%= @name %>!</h1>
@@ -21,14 +21,14 @@
   <h1>Hello world!</h1>
 <% end %>
 
-  
 
-  
+
+
 <!-- Footer -->
 <footer class="footer">
   <!-- contact us -->
   <div id = "contact-form">
-    <h1>Get In Touch!</h1>
+    <p class = "footer-text">Get In Touch!</p>
     <form method = "post" action = "/signup">
       <label for="name">Name: </label>
       <input type="text" id="name" name="name" value="" placeholder="Rob Paskin" required="required" autofocus="autofocus"/>
@@ -37,14 +37,13 @@
       <input type="submit" value="submit" id="submit-button">
     </form>
   </div>
-  
+
   <!-- buttons -->
-  <a href="#"><i class="fa fa-facebook-official"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
   <p class="footer-text"> A project for <a href="https://www.codefirstgirls.org.uk/" target="_blank">Code First: Girls</a>
   </p>
 </footer>
- 
 
-</body>  
+
+</body>
 </html>
