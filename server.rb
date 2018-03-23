@@ -7,7 +7,7 @@ end
 post('/events') do
   puts params[:location]
   puts params[:keyword]
-endi
+end
 
 post('/signup') do
   puts params[:name]

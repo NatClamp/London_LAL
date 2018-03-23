@@ -1,56 +1,67 @@
 <!doctype html>
+<link rel="stylesheet" type="text/css" href="<%= url("/style.css")%>">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="<%= url("/style.css")%>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello from Sinatra</title></head>
+  <title>London Like A Local</title></head>
 <body>
 
   <!-- Navigation -->
-<nav class="nav-bar">
-  <a href="#home" class="nav-bar-item">Home</a>
-  <a href="#about us" class="nav-bar-item">About Us</a>
-  <a href="#contact" class="nav-bar-item">Contact</a>
-</nav>
+<header>
+  <div class="container">
+    <h1>London Like A Local</h1>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+</header>
 
-<h1>Know London like a Local.</h1>
-<h3>Skip the tourist destinations and experience London like a local. Choose a location and a type of activity, and voila! London is your oyster. </h3>
+<main>
+<h1 class = "main title">Discover London</h1>
+<h3 class = "tagline">Skip the tourist destinations and experience London like a local.</h3>
+<h4 class = "tagline-2">Choose a location and a type of activity, and voila! London is your oyster.</h4>
 
 <!-- Event form -->
 <div id = "event-choice-form">
   <form method = "post" action = "/events"> <!-- I think this action needs to change -->
-    <fieldset>
-      <legend>What would you like to do, and where?</legend>
+    <section>
+      <legend>What would you like to do, and where?</legend><br>
       <label for="location">Location </label>
       <input type="text" id="location" name="location" value="" placeholder="Wimbledon" required="required" autofocus="autofocus"/>
       <label for="keyword">Keyword </label>
       <input type="keyword" id="keyword" name="keyword" value="" placeholder="Theatre" required="required"/>
       <input type="submit" value="submit" id="submit-button">
-    </fieldset>
+    </section>
   </form>
 </div>
 
-<!-- Footer -->
-<footer class="footer">
-  <!-- contact us -->
+
+
+  <!-- contact us - not sure where to put this yet-->
   <div id = "contact-form">
     <p class = "footer-text">Get In Touch!</p>
     <form method = "post" action = "/signup">
       <label for="name">Name: </label>
-      <input type="text" id="name" name="name" value="" placeholder="Rob Paskin" required="required" autofocus="autofocus"/>
+      <input type="text" id="name" name="name" value="" placeholder="Jane Doe" required="required" autofocus="autofocus"/>
       <label for="email">Email address: </label>
-      <input type="email" id="email" name="email" value="" placeholder="rob@example.com" required="required"/>
+      <input type="email" id="email" name="email" value="" placeholder="jane@example.com" required="required"/>
       <input type="submit" value="submit" id="submit-button">
     </form>
   </div>
 
-  <!-- buttons -->
-  <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
-  <p class="footer-text"> A project for <a href="https://www.codefirstgirls.org.uk/" target="_blank">Code First: Girls</a>
-  </p>
-</footer>
 
+</main>
+
+  <!-- footer -->
+<footer>
+  <div class="container">
+    <p> A project for <a href="https://www.codefirstgirls.org.uk/" target="_blank">Code First: Girls</a></p>
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+</footer>
 
 </body>
 </html>

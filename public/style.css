@@ -1,5 +1,75 @@
-body {
-  color: #4885ed;
-  font-family: sans-serif;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+}
+
+header {
+  background-color: #BB0A21;
+  color: #ffffff;
+  padding: 10px;
+}
+
+header h1{
+  font-family: 'IBM Plex Serif', serif;
+}
+
+header ul.menu li {
+    margin-top: 10px;
+    display: inline-block !important;
+    font-weight: 700;
+    margin-right: 10px;
+    opacity: 0.8;
+      font-family: Open Sans;
+}
+header ul.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+header ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+.container, main {
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+main {
+  padding: 10px 10px 30px 10px;
+}
+
+main h1, main h2, main h3, main h4, main h5 {
+  color: #231f20;
+  margin: 20px 0px;
+}
+main p {
+  margin: 15px 0px;
+}
+
+section {
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #dee0e2;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  height: 150 px;
+  width: 100%;
+  background-color: #dee0e2;
+  color: #6f777b;
+  padding: 20px 10px;
+  font-size: 0.8em;
+}
+
+footer p {
+  float: left;
+}
+
+footer.i {
+  float: right;
 }
