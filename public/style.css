@@ -7,15 +7,10 @@
 }
 
 header {
-  background-color: #BB0A21;
+  background-color: #2F74AF;
   color: #ffffff;
   padding: 10px;
   text-align: center;
-}
-
-
-header h1{
-  font-family: 'IBM Plex Serif', serif;
 }
 
 header ul.menu li {
@@ -24,7 +19,7 @@ header ul.menu li {
     font-weight: 700;
     margin-right: 10px;
     opacity: 0.8;
-      font-family: Open Sans;
+    font-family: Open Sans;
 }
 header ul.menu li a {
     color: #ffffff;
@@ -34,6 +29,12 @@ header ul.menu li a:hover {
     text-decoration: underline;
 }
 
+main img {
+  height: 200px;
+  float: right;
+  margin: 0px auto;
+}
+
 .container, main {
   max-width: 800px;
   margin: 0px auto;
@@ -41,7 +42,6 @@ header ul.menu li a:hover {
 
 main {
   padding: 10px 10px 10px 10px;
-  text-align: center;
 }
 
 main h1, main h2, main h3, main h4, main h5 {
@@ -54,11 +54,13 @@ main p {
 }
 
 section {
-  padding: 15px;
-  margin-top: 10px;
+  padding: 30px;
+  margin-top: 50px;
   border: 1px solid #dee0e2;
   text-align: center;
+  font-size: 1em;
 }
+
 
 .box {
   font-size: 1em;
@@ -67,7 +69,7 @@ section {
 }
 
 .button {
-  background-color: #2F74AF;
+  background-color: #BB0A21;
   display: inline-block;
   padding: 12px 22px;
   color: #ffffff;
@@ -88,8 +90,27 @@ footer {
   font-size: 0.8em;
 }
 
-footer p {
+.footer-box {
+  font-size: 1em;
+  margin: 2px;
+  padding: 5px;
+}
+
+.footer-button {
+  background-color: #6f777b;
+  display: inline-block;
+  padding: 6px 18px;
+  color: #ffffff;
+  font-size: 1em;
+  border: none;
+  text-decoration: none;
+  margin: 10px;
+}
+
+#contact-form {
+  margin-left: 300px;
   float: left;
+  display: inline-block;
 }
 
 i {
@@ -99,5 +120,6 @@ i {
 
 .fa {
   display: inline-block;
+  padding: 10px;
   margin-left: 30px;
 }

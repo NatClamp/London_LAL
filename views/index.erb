@@ -10,7 +10,7 @@
   <!-- Navigation -->
 <header>
   <div class="container">
-    <h1>London Like A Local</h1>
+  <!--  <h1>London Like A Local</h1> -->
     <ul class="menu">
       <li><a href="#">Home</a></li>
       <li><a href="#">Contact Us</a></li>
@@ -19,14 +19,15 @@
 </header>
 
 <main>
-<h1 class = "main title">Discover London.</h1>
-<h3 class = "tagline">Skip the tourist destinations and experience London like a local. <br>Choose a location and a type of activity, and voila - London is your oyster.</h3>
+    <img src="/LLAL-logo.svg"/>
+    <h1 class = "main title">Discover London.</h1>
+    <h3 class = "tagline">Skip the tourist destinations and experience London like a local. Choose a location and a type of activity, and voila - London is your oyster.</h3>
 
 <!-- Event form -->
 <div id = "event-choice-form">
   <form method = "post" action = "/events">
     <section>
-      <legend>What would you like to do, and where?</legend><br>
+      <legend><h2>What would you like to do, and where?</h2></legend><br>
 <!--      <label for="location">Location </label> -->
       <input type="text" id="location" class = "box" name="location" value="" placeholder="Location e.g. Soho" required="required" autofocus="autofocus"/><br>
 <!--      <label for="keyword">Keyword </label> -->
@@ -39,27 +40,26 @@
 
 
   <!-- contact us - not sure where to put this yet-->
-  <div id = "contact-form">
-    <p class = "footer-text">Get In Touch!</p>
-    <form method = "post" action = "/signup">
-      <label for="name">Name: </label>
-      <input type="text" id="name" name="name" value="" placeholder="Jane Doe" required="required" autofocus="autofocus"/>
-      <label for="email">Email address: </label>
-      <input type="email" id="email" name="email" value="" placeholder="jane@example.com" required="required"/>
-      <input type="submit" value="submit" id="submit-button">
-    </form>
-  </div>
+
 
 
 </main>
 
   <!-- footer -->
 <footer>
-  <div class="container">
-    <p> A project for <a href="https://www.codefirstgirls.org.uk/" target="_blank">Code First: Girls</a></p>
-    <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
-    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-  </div>
+<!--<p> A project for <a href="https://www.codefirstgirls.org.uk/" target="_blank">Code First: Girls</a></p>-->
+    <div id = "contact-form">
+      <form method = "post" action = "/signup">
+        <label for="signup">Sign up</label>
+        <input type="text" class="footer-box" id="name" name="name" value="" placeholder="Name" required="required" autofocus="autofocus"/>
+        <input type="email" class= "footer-box" id="email" name="email" value="" placeholder="Email" required="required"/>
+        <input type="submit" class = "footer-button" value="submit" id="submit-button">
+      </form>
+    </div>
+    <div class="container">
+      <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    </div>
 </footer>
 
 </body>
