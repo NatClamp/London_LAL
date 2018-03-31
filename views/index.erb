@@ -1,68 +1,20 @@
-<!doctype html>
-<link rel="stylesheet" type="text/css" href="<%= url("/style.css")%>">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>London Like A Local</title></head>
-<body>
-
-  <!-- Navigation -->
-<header>
-  <div class="container">
-  <!--  <h1>London Like A Local</h1> -->
-    <ul class="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
-</header>
+<%= erb :header %>
 
 <main>
-    <img src="/LLAL-logo.svg"/>
-    <h1 class = "main title">Discover London.</h1>
-    <h3 class = "tagline">Skip the tourist destinations and experience London like a local. Choose a location and a type of activity, and voila - London is your oyster.</h3>
-
-<!-- Event form -->
-<div id = "event-choice-form">
-  <form method = "post" action = "/events">
-    <section>
-      <legend><h2>What would you like to do, and where?</h2></legend><br>
-<!--      <label for="location">Location </label> -->
-      <input type="text" id="location" class = "box" name="location" value="" placeholder="Location e.g. Soho" required="required" autofocus="autofocus"/><br>
-<!--      <label for="keyword">Keyword </label> -->
-      <input type="keyword" id="keyword" class = "box" name="keyword" value="" placeholder="Keyword e.g. Theatre" required="required"/><br>
-      <input type="submit" value="Submit" id="submit-button" class= "button">
-    </section>
-  </form>
-</div>
-
-
-
-  <!-- contact us - not sure where to put this yet-->
-
-
-
+  <img src="/LLAL-logo.svg"/>
+  <h1 class = "main title">Discover London.</h1>
+  <h3 class = "tagline">Skip the tourist destinations and experience London like a local. Choose a location and a type of activity, and voila - London is your oyster.</h3>
+  <!-- Event form -->
+  <div id = "event-choice-form">
+    <form method="post" action="/events">
+      <section>
+        <legend><h2>What would you like to do, and where?</h2></legend><br>
+        <input type="text" id="location" class = "box" name="location" value="" placeholder="Location e.g. Soho" required="required" autofocus="autofocus"/><br>
+        <input type="keyword" id="keyword" class = "box" name="keyword" value="" placeholder="Keyword e.g. Theatre" required="required"/><br>
+        <input type="submit" value="Submit" id="submit-button" class= "button">
+      </section>
+    </form>
+  </div>
 </main>
 
-  <!-- footer -->
-<footer>
-  <div class = "container">
-    <div id = "contact-form">
-      <form method = "post" action = "/signup">
-        <label for="signup">Sign up</label>
-        <input type="text" class="footer-box" id="name" name="name" value="" placeholder="Name" required="required" autofocus="autofocus"/>
-        <input type="email" class= "footer-box" id="email" name="email" value="" placeholder="Email" required="required"/>
-        <input type="submit" class = "footer-button" value="submit" id="submit-button">
-      </form>
-    </div>
-    <div class="container">
-      <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
-      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-</footer>
-
-</body>
-</html>
+<%= erb :footer %>
