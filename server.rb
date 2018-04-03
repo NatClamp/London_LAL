@@ -15,7 +15,7 @@ end
 post('/events') do
   puts params[:location]
   puts params[:keyword]
-  puts endpointBuilder(params[:location], params[:keyword], "")
+  puts endpointBuilder(params[:location], params[:keyword])
   erb :results
 end
 
