@@ -2,6 +2,7 @@ require 'sinatra'
 require 'net/http'
 require 'open-uri'
 require 'nokogiri'
+require 'nori'
 
 # function to create api request URL
 def endpointBuilder(location, keywords)
@@ -18,12 +19,12 @@ end
 post('/events') do
   puts params[:location]
   puts params[:keyword]
-  puts endpointBuilder(params[:location], params[:keyword])
-  # uri = URI.parse(URI.encode(endpointBuilder(params[:location], params[:keyword])))
-  # api_response = Net::HTTP.get(uri)
-  # doc = Nokogiri::XML(open(api_response)) do |config|
-  #   config.options = Nokogiri::XML::ParseOptions::STRICT | Nokogiri::XML::ParseOptions::NOBLANKS
-  # end
+  uri = URI(endpointBuilder(params[:location], params[:keyword]))
+  api_response = Net::HTTP.get(uri)
+  # xml = Nokogiri::XML(api_response)
+  # hash = Nori.new.parse(xml)
+  # puts hash['date']
+  puts api_response.to_s
   erb :results
 end
 
