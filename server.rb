@@ -9,6 +9,15 @@ def endpointBuilder(location, keywords)
   return "http://api.eventful.com/rest/events/search?app_key=" + ENV['APP_KEY'] + "&location=" + location + ",UK&keywords=" + keywords
 end
 
+# function to return only the data we want from the api
+# def usefulData()
+#   if statement ... haven't written yet
+#     if no results, do this thing
+#   else
+#     for loop ... haven't written yet
+#     loop through each <event> and print out specific tags
+# end
+
 
 # Home route - uses index.erb view
 get('/') do
@@ -17,14 +26,12 @@ end
 
 # Results route
 post('/events') do
-  # puts params[:location]
-  # puts params[:keyword]
   uri = URI(endpointBuilder(params[:location], params[:keyword]))
-  # puts uri
   api_response = Net::HTTP.get(uri)
   parser = Nori.new
   result = parser.parse(api_response)
-  puts JSON.pretty_generate(result)
+  all_data = JSON.pretty_generate(result)
+  puts all_data
   erb :results
 end
 
