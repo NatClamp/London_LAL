@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'net/http'
 require 'open-uri'
-require 'nokogiri'
 require 'nori'
+require 'json'
 
 # function to create api request URL
 def endpointBuilder(location, keywords)
@@ -17,14 +17,14 @@ end
 
 # Results route
 post('/events') do
-  puts params[:location]
-  puts params[:keyword]
+  # puts params[:location]
+  # puts params[:keyword]
   uri = URI(endpointBuilder(params[:location], params[:keyword]))
+  # puts uri
   api_response = Net::HTTP.get(uri)
-  # xml = Nokogiri::XML(api_response)
-  # hash = Nori.new.parse(xml)
-  # puts hash['date']
-  puts api_response.to_s
+  parser = Nori.new
+  result = parser.parse(api_response)
+  puts JSON.pretty_generate(result)
   erb :results
 end
 
