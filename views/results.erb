@@ -4,11 +4,17 @@
     <img src="/LLAL-logo.svg"/>
     <h1 class = "main title">Results</h1>
     <h3 class = "tagline">
-      <p>We'll take a little bit of Van Dyke Brown. A happy cloud. Just go out and talk to a tree. Make friends with it. Just pretend you are a whisper floating across a mountain.</p>
-      <p>We must be quiet, soft and gentle. Everybody needs a friend. Let all these little things happen. Don't fight them. Learn to use them. It's almost like something out of a fairytale book. Here's something that's fun. You can't make a mistake. Anything that happens you can learn to use - and make something beautiful out of it.</p>
-      <p>Just think about these things in your mind - then bring them into your world. Follow the lay of the land. It's most important. We have no limits to our world. We're only limited by our imagination. Take your time. Speed will come later. I thought today we would make a happy little stream that's just running through the woods here.</p>
+      <p>Here are the top 5 results for your search. Hope there's something for you!</p>
     </h3>
-    
+    <% i = 0 %>
+      <% @result.each do |event| %>
+        <% if i < 5 %>
+          <small><%= event["start_time"]%> - <%= event["title"] %></small>
+          <h4></h4>
+          <% i += 1 %>
+        <% end %>
+      <% end %>
+
 </main>
 
 <%= erb :footer %>

@@ -29,11 +29,17 @@ post('/events') do
   uri = URI(endpointBuilder(params[:location], params[:keyword]))
   api_response = Net::HTTP.get(uri)
   parser = Nori.new
+
+  # The below line generates a ruby hash we can pass into the view
   result = parser.parse(api_response)
-  all_data = JSON.pretty_generate(result)
-  puts all_data
+  @result = result["search"]["events"]["event"]
+
+  # The below line generates some JSON from that hash for dev/logging purposes only (since ruby treats JSON like a string)
+  # @all_data = JSON.pretty_generate(result)
+
   erb :results
 end
+
 
 # Email signup route
 post('/signup') do
