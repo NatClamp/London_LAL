@@ -27,16 +27,12 @@ end
 # Results route
 post('/events') do
   uri = URI(endpointBuilder(params[:location], params[:keyword]))
+  puts uri
   api_response = Net::HTTP.get(uri)
   parser = Nori.new
-
-  # The below line generates a ruby hash we can pass into the view
   result = parser.parse(api_response)
-  @result = result["search"]["events"]["event"]
-
-  # The below line generates some JSON from that hash for dev/logging purposes only (since ruby treats JSON like a string)
-  # @all_data = JSON.pretty_generate(result)
-
+  result = result["search"]["events"]["event"]
+  @top_five = result.first(5)
   erb :results
 end
 
