@@ -4,13 +4,17 @@
     <img src="/LLAL-logo.svg"/>
     <h1 class = "main title">Results</h1>
     <h3 class = "tagline">
-      <p>Here are the top 5 results for your search. Hope there's something for you!</p>
+      <p>Here are the top results for your search. Hope there's something for you!</p>
     </h3>
     <% i = 0 %>
       <% @result.each do |event| %>
         <% if i < 5 %>
-          <small><%= event["start_time"]%> - <%= event["title"] %></small>
-          <h4></h4>
+          <section>
+            <p><%= event["start_time"]%></p>
+            <p><h2><%= event["title"] %></h2></p>
+            <p><small> <%= event["venue_name"]%>, <%= event["venue_address"]%>, <%= event["city_name"]%>, <%= event["postal_code"]%></small></p>
+            <p><a href= "<%= event["url"] %>" >Find out more</a> </p>
+          </section>
           <% i += 1 %>
         <% end %>
       <% end %>
