@@ -34,9 +34,9 @@ header ul.menu li a:hover {
     text-decoration: underline;
 }
 
-header img {
+img {
   height: 100px;
-  margin: 10px;
+  margin: 40px;
 }
 
 main img {
@@ -81,19 +81,14 @@ ul.results {
   list-style-type: none;
 }
 
-.examples {
-  display: flex;
-  align-items: center;
-}
-
-.main-title {
+p.main-title {
   font-size: 3em;
   font-style: italic;
   padding-top: 70px;
   padding-left: 40px;
 }
 
-.search-tips {
+.search-tips, .explanation {
   text-align: left;
   font-size: 1.5em;
   padding-left: 40px;
@@ -108,13 +103,19 @@ ul.results {
   padding-bottom: 20px;
 }
 
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .search-box {
   background-color: #2F74AF;
-  margin: 20px 20px 20px 20px;
-  padding: 20px 20px 20px 20px;
-  font-size: 1em;
+  margin: 15px;
+  padding: 15px;
+  font-size: 1.2em;
   color: white;
   text-align: center;
+  width: 33.3%;
 }
 
 .box {
