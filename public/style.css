@@ -81,6 +81,11 @@ ul.results {
   list-style-type: none;
 }
 
+.examples {
+  display: flex;
+  align-items: center;
+}
+
 .main-title {
   font-size: 3em;
   font-style: italic;
@@ -100,6 +105,16 @@ ul.results {
   font-size: 1em;
   font color: blue;
   padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.search-box {
+  background-color: #2F74AF;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  font-size: 1em;
+  color: white;
+  text-align: center;
 }
 
 .box {
