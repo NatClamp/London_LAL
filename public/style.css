@@ -12,12 +12,6 @@ header {
   padding: 10px;
 }
 
-/* header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
-
 header ul.menu li {
     margin-top: 10px;
     display: inline-block !important;
@@ -98,24 +92,33 @@ p.main-title {
 .search-bullets {
   text-align: left;
   font-size: 1em;
-  font color: blue;
   padding-left: 100px;
   padding-bottom: 20px;
 }
 
 .examples {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  height: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-around;
+}
+
+.examples a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .search-box {
   background-color: #2F74AF;
-  margin: 15px;
+  margin: auto;
   padding: 15px;
   font-size: 1.2em;
   color: white;
   text-align: center;
-  width: 33.3%;
+  width: 90px;
+  height: auto;
 }
 
 .box {
