@@ -14,12 +14,42 @@
     </ul>
   </div>
   <div class = "examples">
-    <a href="/"><div class = "search-box">Comedy</div></a>
+    <form action="/events" method="post">
+      <input type="hidden" name="keyword" value="comedy"/>
+      <input type="hidden" name="location" value="london"/>
+      <button type="submit" class="button">Comedy</button>
+    </form>
+    <form action="/events" method="post">
+      <input type="hidden" name="keyword" value="nightlife"/>
+      <input type="hidden" name="location" value="london"/>
+      <button type="submit" class="button">Nightlife</button>
+    </form>
+    <form action="/events" method="post">
+      <input type="hidden" name="keyword" value="museum"/>
+      <input type="hidden" name="location" value="london"/>
+      <button type="submit" class="button">Museums</button>
+    </form>
+    <form action="/events" method="post">
+      <input type="hidden" name="keyword" value="family"/>
+      <input type="hidden" name="location" value="london"/>
+      <button type="submit" class="button">Family</button>
+    </form>
+    <form action="/events" method="post">
+      <input type="hidden" name="keyword" value="food"/>
+      <input type="hidden" name="location" value="london"/>
+      <button type="submit" class="button">Food</button>
+    </form>
+    <form action="/events" method="post">
+      <input type="hidden" name="keyword" value="concert"/>
+      <input type="hidden" name="location" value="london"/>
+      <button type="submit" class="button">Concert</button>
+    </form>
+    <!-- <a href="/"><div class = "search-box">Comedy</div></a>
     <a href="/"><div class = "search-box">Nightlife</div>
     <a href="/"><div class = "search-box">Food</div>
     <a href="/"><div class = "search-box">Concert</div>
     <a href="/"><div class = "search-box">Family</div>
-    <a href="/"><div class = "search-box">Museum</div>
+    <a href="/"><div class = "search-box">Museum</div> -->
   </div>
 </main>
 <%= erb :footer %>
