@@ -12,12 +12,6 @@ header {
   padding: 10px;
 }
 
-/* header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
-
 header ul.menu li {
     margin-top: 10px;
     display: inline-block !important;
@@ -34,9 +28,9 @@ header ul.menu li a:hover {
     text-decoration: underline;
 }
 
-header img {
+img {
   height: 100px;
-  margin: 10px;
+  margin: 40px;
 }
 
 main img {
@@ -79,6 +73,52 @@ section, ul.results li {
 
 ul.results {
   list-style-type: none;
+}
+
+p.main-title {
+  font-size: 3em;
+  font-style: italic;
+  padding-top: 70px;
+  padding-left: 40px;
+}
+
+.search-tips, .explanation {
+  text-align: left;
+  font-size: 1.5em;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.search-bullets {
+  text-align: left;
+  font-size: 1em;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.examples {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-around;
+}
+
+.examples a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.search-box {
+  background-color: #2F74AF;
+  margin: auto;
+  padding: 15px;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  width: 90px;
+  height: auto;
 }
 
 .box {

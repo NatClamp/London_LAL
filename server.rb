@@ -17,11 +17,11 @@ end
 # Results route
 post('/events') do
   uri = URI(endpointBuilder(params[:location], params[:keyword]))
-  puts uri
+  # puts uri
   api_response = Net::HTTP.get(uri)
   parser = Nori.new
   result = parser.parse(api_response)
-  puts result
+  # puts result
   if result["search"]["total_items"].to_i > 0
     result = result["search"]["events"]["event"]
     @top_five = result.first(5)
