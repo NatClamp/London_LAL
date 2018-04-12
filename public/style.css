@@ -45,6 +45,7 @@ main img {
   margin: 0px auto;
 }
 
+
 .container, main {
   max-width: 800px;
   margin: 0px auto;
@@ -144,4 +145,9 @@ i {
 
 .clearfix{
   clear: both
+}
+
+.big-ben {
+  width: 210px;
+  height: auto;
 }

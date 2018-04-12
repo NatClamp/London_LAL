@@ -14,6 +14,11 @@ get('/') do
   erb :index
 end
 
+# About Us route - uses about.erb view
+get('/about') do
+  erb :about
+end
+
 # Results route
 post('/events') do
   uri = URI(endpointBuilder(params[:location], params[:keyword]))

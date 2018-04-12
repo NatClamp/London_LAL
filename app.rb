@@ -1,0 +1,1 @@
+export APP_KEY="qZVWwfFqHHxbQVDh"
