@@ -1,9 +1,11 @@
 <%= erb :header %>
 
 <main>
-  <img src="/LLAL-logo.svg"/>
-  <h1 class = "main title">Discover London.</h1>
-  <h3 class = "tagline">Skip the tourist destinations and experience London like a local. Choose a location and a type of activity, and voila - London is your oyster.</h3>
+  <div class="intro">
+    <img src="/LLAL-logo.svg"/>
+    <h1 class = "main title">Discover London.</h1>
+    <h3 class = "tagline">Skip the tourist destinations and experience London like a local. Choose a location and a type of activity, and voila - London is your oyster.</h3>
+  </div>
   <!-- Event form -->
   <div id = "event-choice-form">
     <form method="post" action="/events">
