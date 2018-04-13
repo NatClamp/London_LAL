@@ -2,8 +2,6 @@
 
 source "https://rubygems.org"
 
-ruby '2.3.4'
-
 # sinatra
 gem 'sinatra', '2.0.1'
 # nori
