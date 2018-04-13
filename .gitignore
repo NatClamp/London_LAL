@@ -1,1 +1,5 @@
 *.env
+app.rv
+config.ru
+.rhistory
+.byebug_history
