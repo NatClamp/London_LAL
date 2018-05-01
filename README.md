@@ -6,11 +6,10 @@ This is a cool web app project to tell you about events going on in areas of Lon
 <h2> Setup </h2>
 To start the app, run `ruby server.rb` in the command line.
 
-<h3> Instructions </h3>
+<h2> Instructions </h2>
 Simply enter the area of London you want to focus on and a keyword for the activity you want to do, such as 'food', 'theatre' or even 'cheese' (everyone loves a cheese themed event!).
 
-<h2>Team members:</h2>
-
+<h3>Team members:</h3>
 <p>Natalie Clamp
 <p>Connie Chau
 <p>Roisin Clarke
