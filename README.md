@@ -14,8 +14,8 @@ To start the app, run `ruby server.rb` in the command line.
 Simply enter the area of London you want to focus on and a keyword for the activity you want to do, such as 'food', 'theatre' or even 'cheese' (everyone loves a cheese themed event!).
 
 <h4>Team members:</h4>
-Natalie Clamp
-Roisin Clarke
-Lizzy Jegede
-Rosie Todd
+Natalie Clamp // 
+Roisin Clarke // 
+Lizzy Jegede // 
+Rosie Todd // 
 Connie Chau
