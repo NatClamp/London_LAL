@@ -1,10 +1,10 @@
 # London, Like a Local
 <h1>CF:G Ruby Project</h1>
-This is a cool web app project to tell you about events going on in areas of London!
+<p>This is a cool web app project to tell you about events going on in areas of London!</p>
 
-The app is deployed <a href="http://londonlikealocal.herokuapp.com/">here</a> on heroku.
+<p>The app is deployed <a href="http://londonlikealocal.herokuapp.com/">here</a> on heroku.</p>
 
-We had some great news - this app <b>won</b> the CodeFirst: Girls project competition for the Advances Ruby course held in Paddington early 2018!
+<p>We had some great news - this app <b>won</b> the <b>CodeFirst: Girls</b> project competition for the Advances Ruby course held in Paddington early 2018!</p>
 
 <h2> How to use our code</h2>
 <h3> Setup </h3>
