@@ -140,7 +140,7 @@ p.main-title {
 }
 
 footer {
-  position:absolute;
+  position:fixed;
   bottom:0;
   height: 150px;
   width: 100%;
